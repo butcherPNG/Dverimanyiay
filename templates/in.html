@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+      <header > 
+        <!-- MENU -->
+        
+        <div class="con" id="nav">
+        <nav class="navbar navbar-expand-lg navbar-dark " >
+            <div class="container-fluid">
+              <a id="navv" class="navbar-brand" href="#"><img src="{% static 'img/logo2.png' %}" width="50px" height="50px">Dverimaniay
+              </a>
+              <button id="ccc" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Меню</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'map' %}">Мы на карте</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'information' %}">Новинки и акции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">О нас</a>
+                  </li>
+                </ul>
+                <p class="tel">Tелефон для связи: 8-900-666-77</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+
+
+    </header>
+
+
+<!-- Слайдер -->
+
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        
+      <div class="carousel-item active" data-bs-interval="4000">
+        <img src="{% static 'img/sl.png' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Метка первого слайда</h5>
+          <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="{% static 'img/sl.png' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Метка второго слайда</h5>
+          <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="4000">
+        <img src="img/sl.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Метка третьего слайда</h5>
+          <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+        </div>
+      </div>
+    </div>
+    <div class="conn"><h2>Категория изделий</h2></div>
+
+  </div>
+  <!-- paralax -->
+
+
+  <div class="parallax">
+    <h1>
+       This is parallax
+    </h1>
+    <div class="mask"></div>
+ </div>
+ <div class="parallaxx">
+    <h1>
+       This is parallax
+    </h1>
+    <div class="mask"></div>
+ </div>
+ <div class="parallax">
+    <h1>
+       This is parallax
+    </h1>
+    <div class="mask"></div>
+ </div>
+ <div class="parallaxx">
+    <h1>
+       This is parallax
+    </h1>
+    <div class="mask"></div>
+ </div>
+
+
+
+
+
+  <script src="./Footers · Bootstrap v5.1_files/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+      <script src="{% static 'js/javascript.js' %}"></script>
+</body>
+</html>
+
+
+<!-- index -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dverimaniay</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header> 
+        <!-- MENU -->
+        
+        <div class="con">
+        <nav class="navbar navbar-expand-lg navbar-dark ">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="{% static 'img/logo2.png' %}" width="50px" height="50px">Dverimaniay
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="{% url 'index' %}">Меню</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'map' %}">Мы на карте</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'information' %}">Новинки и акции</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'about' %}">О нас</a>
+                  </li>
+                </ul>
+                <p class="tel">Tелефон для связи: 8-900-666-77</p>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+
+
+
+
+
+<!-- Слайдер -->
+
+
+          <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        
+      <div class="carousel-item active" data-bs-interval="10000">
+        <img src="{% static 'img/sl.png' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Метка первого слайда</h5>
+          <p>Некоторый репрезентативный заполнитель для первого слайда.</p>
+        </div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <img src="{% static 'img/sl.png' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Метка второго слайда</h5>
+          <p>Некоторый репрезентативный заполнитель для второго слайда.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="{% static 'img/sl.png' %}" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Метка третьего слайда</h5>
+          <p>Некоторый репрезентативный заполнитель для третьего слайда.</p>
+        </div>
+      </div>
+    </div>
+    <div class="conn"><h2>Категория изделий</h2></div>
+
+  </div>
+    </header>
+
+    <div class="parallax">
+        <h1>
+           This is parallax
+        </h1>
+        <div class="mask"></div>
+     </div>
+     <div class="parallaxx">
+        <h1>
+           This is parallax
+        </h1>
+        <div class="mask"></div>
+     </div>
+
+
+
+
+
+
+      <script src="{% static 'js/javascript.js' %}"></script>
+
+    <script src="./Footers · Bootstrap v5.1_files/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+    <!-- <div class="container-catalog">
+    
+  
+  
+    <div class="block-catalog">
+      <div class="block-dver">
+        <div class="filtr"> -->
+          <!-- <div class="cat-izdeli">
+          <p class="text">КАТЕГОРИИ ИЗДЕЛИЙ:</p>
+          <div class="">
+            <h3><a href=""></a></h3>
+          <ul class="menu">
+            <li class="menu-container">Царговые
+              <ul class="menu-container-info">
+              <li class="menu-text">ДСП</li>
+              <li class="menu-text  ">ПВХ</li>
+              <li class="menu-text">Отстеклённые</uli>
+            </ul>
+            </li>
+            <li class="menu-container">Штампованные
+              <ul class="menu-container-info">
+              <li class="menu-text">Ламинированные</li>
+              <li class="menu-text  ">ПВХ </li>
+              <li class="menu-text">Грунтованные</uli>
+            </ul>
+            </li>
+            <li class="menu-container">Погонаж
+              <ul class="menu-container-info">
+              <li class="menu-text">Телескопический</li>
+              <li class="menu-text  ">Двери экошпон</li>
+              <li class="menu-text">Ламинированный</uli>
+            </ul>
+            </li>
+            <li class="menu-container">Декоративные стёкла
+              <ul class="menu-container-info">
+              <li class="menu-text">.........</li>
+              <li class="menu-text  ">.........</li>
+              <li class="menu-text">.........</uli>
+            </ul>
+            </li>
+          </ul>
+          </div>
+        </div> -->
+        
+      <!-- </div>
+      </div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+      <div class="block-dver"></div>
+    </div>
+
+      
+  </div>
+
+ -->
+

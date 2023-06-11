@@ -1,0 +1,15 @@
+{% load static %}
+
+
+    <div class="col-4 offset-1">
+        <form action="{% url 'contact' %}" method="post" name="ContactView">
+            <p class="fot-text">Подпишитесь на нашу рассылку новостей, чтобы не пропустить акции</p>
+            <div class="d-flex w-100 gap-2">
+    <!--            <label for="newsletter2" class="visually-hidden">Email address</label>-->
+                <!--            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">-->
+                {% csrf_token %}
+                {{ contact_form }}
+                <input class="btn btn-primary" name="ContactView" type="submit" value="Подписаться">
+            </div>
+        </form>
+    </div>
